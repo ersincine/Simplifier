@@ -18,7 +18,8 @@ public class GUIDemo extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Button button = GUISimplifier.newButton("Click!", Color.DARKGOLDENROD, (a)->{
-            int showConfirmationDialog = GUISimplifier.showConfirmationDialog("Title", "Header text", "Content text", "Cancel button text", "button text1", "button text2");
+            int showConfirmationDialog = GUISimplifier.showConfirmationDialog(
+                "Title", "Header text", "Content text", "Cancel button text", "button text1", "button text2");
         });
         
         
