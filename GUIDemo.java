@@ -17,18 +17,18 @@ public class GUIDemo extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Button button = SimplifiedGUI.newButton("Click!", Color.DARKGOLDENROD, (a)->{
-            int showConfirmationDialog = SimplifiedGUI.showConfirmationDialog("Title", "Header text", "Content text", "Cancel button text", "button text1", "button text2");
+        Button button = GUISimplifier.newButton("Click!", Color.DARKGOLDENROD, (a)->{
+            int showConfirmationDialog = GUISimplifier.showConfirmationDialog("Title", "Header text", "Content text", "Cancel button text", "button text1", "button text2");
         });
         
         
-        Label label = SimplifiedGUI.newLabel("Label comes here");
+        Label label = GUISimplifier.newLabel("Label comes here");
         
-        TextArea textArea = SimplifiedGUI.newTextArea("Default text", 200, 400, true);
+        TextArea textArea = GUISimplifier.newTextArea("Default text", 200, 400, true);
         
         Node[] nodes = {button, label, textArea};
         
-        VBox root = SimplifiedGUI.newVBox(10, 10, Color.BEIGE, nodes);
+        VBox root = GUISimplifier.newVBox(10, 10, Color.BEIGE, nodes);
         
         stage.setTitle("Title");
         stage.setScene(new Scene(root));
